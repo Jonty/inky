@@ -52,10 +52,10 @@ setup(
     py_modules=[],
     packages=['inky'],
     include_package_data=True,
-    install_requires=['numpy', 'smbus2', 'spidev'],
+    install_requires=['numpy', 'smbus2'],
     extras_require={
-        'rpi-gpio-output': ['RPi.GPIO'],
-        'rpi': ['RPi.GPIO'],
+        'rpi-gpio-output': ['RPi.GPIO', 'spidev'],
+        'rpi': ['RPi.GPIO', 'spidev'],
         'example-depends': ['requests', 'geocoder', 'beautifulsoup4', 'font-fredoka-one', 'font-source-serif-pro', 'font-hanken-grotesk', 'font-intuitive']
     }
 )
